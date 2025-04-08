@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/yogesh-shelke-nttd/argocd-monitoring/tree/feature/argo-cd-deployment
     targetRevision: feature/argo-cd-deployment
-    path: argocd-monitoring/kustomization.yaml
+    path: argocd-monitoring
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
