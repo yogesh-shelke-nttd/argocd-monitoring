@@ -10,7 +10,7 @@ spec:
     targetRevision: feature/argo-cd-deployment
     path: argocd-monitoring
   destination:
-    server: https://127.0.0.1:6443
+    server: https://127.0.0.1:6443%
     namespace: argocd
   syncPolicy:
     automated:
