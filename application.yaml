@@ -9,7 +9,7 @@ spec:
     repoURL: https://github.com/yogesh-shelke-nttd/argocd-monitoring
     targetRevision: feature/argo-cd-deployment
   destination:
-    server: https://127.0.0.1:6443
+    server: docker-desktop
     namespace: argocd
   syncPolicy:
     automated:
