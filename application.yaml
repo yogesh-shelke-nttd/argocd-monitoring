@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/yogesh-shelke-nttd/argocd-monitoring
     targetRevision: feature/argo-cd-deployment
-    path: /
+    path: .
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
