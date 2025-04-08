@@ -10,7 +10,7 @@ spec:
     targetRevision: feature/argo-cd-deployment
     path: argocd-monitoring
   destination:
-    server: https://kubernetes.default.svc
+    server: docker-desktop
     namespace: argocd
   syncPolicy:
     automated:
