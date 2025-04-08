@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argo-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/yogesh-shelke-nttd/argocd-monitoring/tree/feature/argo-cd-deployment
+    targetRevision: feature/argo-cd-deployment
+    path: argocd-monitoring/kustomization.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
