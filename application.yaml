@@ -2,16 +2,15 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argo-app
-  namespace: default
+  namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/yogesh-shelke-nttd/argocd-monitoring
     targetRevision: feature/argo-cd-deployment
-    path: argocd-monitoring
   destination:
     server: https://127.0.0.1:6443
-    namespace: default
+    namespace: argocd
   syncPolicy:
     automated:
       prune: true
