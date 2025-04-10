@@ -1,0 +1,6 @@
+projectKey=argo-cd
+serverUrl=http://localhost:9001
+serverVersion=25.4.0.105899
+dashboardUrl=http://localhost:9001/dashboard?id=argo-cd
+ceTaskId=c1fcff1a-04f0-46cb-a6ab-064d9134a91f
+ceTaskUrl=http://localhost:9001/api/ce/task?id=c1fcff1a-04f0-46cb-a6ab-064d9134a91f
