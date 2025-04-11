@@ -13,4 +13,4 @@ data:
           - targets: ['localhost:9090']
       - job_name: 'my-app'
         static_configs:
-          - targets: ['argo-app-service:8080']
+          - targets: ['localhost:30007']
