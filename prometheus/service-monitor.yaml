@@ -1,0 +1,16 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: argo-app-monitor
+  labels:
+    release: monitoring
+spec:
+  selector:
+    matchLabels:
+      app: argo-app
+  namespaceSelector:
+    matchNames:
+      - argocd
+  endpoints:
+    - port: metrics
+      interval: 15s
