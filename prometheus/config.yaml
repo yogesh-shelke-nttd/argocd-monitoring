@@ -7,10 +7,8 @@ data:
   prometheus.yml: |
     global:
       scrape_interval: 15s
-    scrape_configs:
-      - job_name: 'prometheus'
-        static_configs:
-          - targets: ['localhost:9090']
+    scrape_configs:    
       - job_name: 'my-app'
+        metrics_path: /metrics
         static_configs:
-          - targets: ['argo-app-service.argocd.svc.cluster.local:80']
+          - targets: ['argo-app-service.argocd.svc.cluster.local:9113']
